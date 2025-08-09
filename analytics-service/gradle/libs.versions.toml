@@ -1,0 +1,44 @@
+[versions]
+kotlin-version = "2.0.0"
+spring-boot-version = "3.5.4"
+spring-boot-dependency-management-version = "1.1.7"
+jackson-version = "2.17.1"
+junit-platform-version = "1.13.4"
+grpc-version = "1.69.0"
+protobuf-version = "4.29.1"
+protobuf-plugin-version = "0.9.4"
+grpc-starter-version = "3.1.0.RELEASE"
+annotations-version = "6.0.53"
+protoc-version = "3.25.5"
+grpc-codegen-version = "1.68.1"
+spring-kafka-version = "3.3.0"
+
+
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin-version" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin-version" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "spring-boot-version" }
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "jackson-version" }
+grpc-netty-shaded = { group = "io.grpc", name = "grpc-netty-shaded", version.ref = "grpc-version" }
+grpc-protobuf = { group = "io.grpc", name = "grpc-protobuf", version.ref = "grpc-version" }
+grpc-stub = { group = "io.grpc", name = "grpc-stub", version.ref = "grpc-version" }
+protobuf-java = { group = "com.google.protobuf", name = "protobuf-java", version.ref = "protobuf-version" }
+grpc-spring-boot-starter = { group = "net.devh", name = "grpc-spring-boot-starter", version.ref = "grpc-starter-version" }
+annotations-api = { group = "org.apache.tomcat", name = "annotations-api", version.ref = "annotations-version" }
+protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protoc-version" }
+protoc-gen-grpc-java = { group = "io.grpc", name = "protoc-gen-grpc-java", version.ref = "grpc-codegen-version" }
+spring-kafka = { group = "org.springframework.kafka", name = "spring-kafka", version.ref = "spring-kafka-version" }
+
+
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "spring-boot-version" }
+kotlin-test-junit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5", version.ref = "kotlin-version" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit-platform-version" }
+
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-version" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+spring-boot-depencendy-management = { id = "io.spring.dependency-management", version.ref = "spring-boot-dependency-management-version" }
+kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin-version" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin-version" }

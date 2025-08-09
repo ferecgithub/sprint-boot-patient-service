@@ -3,8 +3,8 @@ POST http://0.0.0.0:4000/patients
 Content-Type: application/json
 
 {
-  "name": "John Doe with billing account",
-  "email": "test_billing_account1244@example.com",
+  "name": "John Doe Kafka Test",
+  "email": "kafka_test@example.com",
   "address": "123 main street",
   "dateOfBirth": "1990-05-23",
   "registeredDate": "2025-08-08"
