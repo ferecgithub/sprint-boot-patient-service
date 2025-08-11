@@ -1,4 +1,4 @@
 ### GET request to get all patients
-GET http://0.0.0.0:4000/patients
+GET http://0.0.0.0:4004/api/patients
 
 ###

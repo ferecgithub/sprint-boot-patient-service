@@ -1,0 +1,39 @@
+[versions]
+kotlin-version = "2.0.0"
+spring-boot-version = "3.5.4"
+spring-boot-dependency-management-version = "1.1.7"
+jackson-version = "2.17.1"
+junit-platform-version = "1.13.4"
+h2database-version = "2.3.232"
+spring-security-test-version = "6.5.2"
+jjwt-version = "0.12.6"
+postgresql-jdbc-driver-version = "42.7.7"
+springdoc-openapi-starter-webmvc-ui-version = "2.8.9"
+
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin-version" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin-version" }
+spring-boot-starter = { group = "org.springframework.boot", name = "spring-boot-starter", version.ref = "spring-boot-version" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "spring-boot-version" }
+spring-boot-starter-data-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "spring-boot-version" }
+spring-boot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security", version.ref = "spring-boot-version" }
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "jackson-version" }
+h2-database = { group = "com.h2database", name = "h2", version.ref = "h2database-version" }
+jjwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jjwt-version" }
+jjwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jjwt-version" }
+jjwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jjwt-version" }
+postgresql-jdbc-driver = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql-jdbc-driver-version" }
+springdoc-openapi-starter-webmvc-ui = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc-openapi-starter-webmvc-ui-version" }
+
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "spring-boot-version" }
+spring-security-test = { group = "org.springframework.security", name = "spring-security-test", version.ref = "spring-security-test-version" }
+kotlin-test-junit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5", version.ref = "kotlin-version" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit-platform-version" }
+
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-version" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+spring-boot-depencendy-management = { id = "io.spring.dependency-management", version.ref = "spring-boot-dependency-management-version" }
+kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin-version" }
