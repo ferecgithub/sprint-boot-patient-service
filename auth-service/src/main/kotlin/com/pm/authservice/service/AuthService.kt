@@ -24,7 +24,7 @@ class AuthService(
         val token = userService.findByEmail(loginRequestDTO.email)
             .filter { user -> passwordEncoder.matches(loginRequestDTO.password, user.password!!) }
             .map { user ->
-                val generated = jwtUtil.generateToken(user.email, user.role)
+                val generated = jwtUtil.generateToken(user.email!!, user.role!!)
                 log.info("Generated token for user ${user.email}: $generated")
                 generated
             }

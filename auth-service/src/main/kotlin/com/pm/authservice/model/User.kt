@@ -13,14 +13,14 @@ import java.util.UUID
 data class User(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    val id: UUID,
+    val id: UUID? = null,
 
     @Column(unique = true, nullable = false)
-    var email: String,
+    var email: String? = null,
 
     @Column(nullable = false)
-    var password: String,
+    var password: String? = null,
 
     @Column(nullable = false)
-    var role: String
+    var role: String? = null,
 )
